@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "改变图片尺寸", "改变图片尺寸\改变图片尺寸.csproj", "{06946249-7DF2-44F8-BF78-FD78CE283AB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "头像生成", "头像生成\头像生成.csproj", "{1D6068FC-A5AF-407E-9966-3743BB8F4800}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{06946249-7DF2-44F8-BF78-FD78CE283AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06946249-7DF2-44F8-BF78-FD78CE283AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06946249-7DF2-44F8-BF78-FD78CE283AB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6068FC-A5AF-407E-9966-3743BB8F4800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6068FC-A5AF-407E-9966-3743BB8F4800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6068FC-A5AF-407E-9966-3743BB8F4800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6068FC-A5AF-407E-9966-3743BB8F4800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
