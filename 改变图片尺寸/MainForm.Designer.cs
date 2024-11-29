@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.butOpen = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textLength = new System.Windows.Forms.TextBox();
@@ -41,6 +42,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.labWorkPath = new System.Windows.Forms.Label();
+            this.textPrefix = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // butOpen
@@ -56,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 111);
+            this.label1.Location = new System.Drawing.Point(60, 146);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 1;
@@ -64,14 +67,14 @@
             // 
             // textLength
             // 
-            this.textLength.Location = new System.Drawing.Point(83, 106);
+            this.textLength.Location = new System.Drawing.Point(83, 141);
             this.textLength.Name = "textLength";
             this.textLength.Size = new System.Drawing.Size(100, 21);
             this.textLength.TabIndex = 2;
             // 
             // textWidth
             // 
-            this.textWidth.Location = new System.Drawing.Point(83, 133);
+            this.textWidth.Location = new System.Drawing.Point(83, 168);
             this.textWidth.Name = "textWidth";
             this.textWidth.Size = new System.Drawing.Size(100, 21);
             this.textWidth.TabIndex = 4;
@@ -79,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 138);
+            this.label2.Location = new System.Drawing.Point(60, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 3;
@@ -87,7 +90,7 @@
             // 
             // textHeight
             // 
-            this.textHeight.Location = new System.Drawing.Point(83, 160);
+            this.textHeight.Location = new System.Drawing.Point(83, 195);
             this.textHeight.Name = "textHeight";
             this.textHeight.Size = new System.Drawing.Size(100, 21);
             this.textHeight.TabIndex = 6;
@@ -95,7 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 165);
+            this.label3.Location = new System.Drawing.Point(60, 200);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 5;
@@ -103,7 +106,7 @@
             // 
             // butSubmit
             // 
-            this.butSubmit.Location = new System.Drawing.Point(83, 200);
+            this.butSubmit.Location = new System.Drawing.Point(83, 235);
             this.butSubmit.Name = "butSubmit";
             this.butSubmit.Size = new System.Drawing.Size(75, 23);
             this.butSubmit.TabIndex = 7;
@@ -114,7 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(189, 111);
+            this.label4.Location = new System.Drawing.Point(189, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(17, 12);
             this.label4.TabIndex = 8;
@@ -123,7 +126,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(189, 165);
+            this.label5.Location = new System.Drawing.Point(189, 200);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(17, 12);
             this.label5.TabIndex = 9;
@@ -132,7 +135,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(189, 138);
+            this.label6.Location = new System.Drawing.Point(189, 173);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 12);
             this.label6.TabIndex = 10;
@@ -156,12 +159,30 @@
             this.labWorkPath.TabIndex = 12;
             this.labWorkPath.Text = "请选择或拖入文件夹";
             // 
+            // textPrefix
+            // 
+            this.textPrefix.Location = new System.Drawing.Point(83, 114);
+            this.textPrefix.Name = "textPrefix";
+            this.textPrefix.Size = new System.Drawing.Size(100, 21);
+            this.textPrefix.TabIndex = 14;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(48, 119);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 12);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "前缀：";
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(542, 285);
+            this.Controls.Add(this.textPrefix);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.labWorkPath);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -175,6 +196,7 @@
             this.Controls.Add(this.textLength);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.butOpen);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "图片修改";
@@ -200,6 +222,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labWorkPath;
+        private System.Windows.Forms.TextBox textPrefix;
+        private System.Windows.Forms.Label label8;
     }
 }
 

@@ -56,12 +56,15 @@ namespace 改变图片尺寸
                 int lengthPix = (int)(length * 118.11);
                 int widthPix = (int)(width * 118.11);
                 int heightPix = (int)(height * 118.11);
-                ChangeSize("1主视图.jpg", lengthPix, heightPix, outPath);
-                ChangeSize("2后视图.jpg", lengthPix, heightPix, outPath);
-                ChangeSize("3左视图.jpg", widthPix, heightPix, outPath);
-                ChangeSize("4右视图.jpg", widthPix, heightPix, outPath);
-                ChangeSize("5俯视图.jpg", lengthPix, widthPix, outPath);
-                ChangeSize("6仰视图.jpg", lengthPix, widthPix, outPath);
+
+                string prefix = textPrefix.Text;
+
+                ChangeSize($"1{prefix}主视图.jpg", lengthPix, heightPix, outPath);
+                ChangeSize($"2{prefix}后视图.jpg", lengthPix, heightPix, outPath);
+                ChangeSize($"3{prefix}左视图.jpg", widthPix, heightPix, outPath);
+                ChangeSize($"4{prefix}右视图.jpg", widthPix, heightPix, outPath);
+                ChangeSize($"5{prefix}俯视图.jpg", lengthPix, widthPix, outPath);
+                ChangeSize($"6{prefix}仰视图.jpg", lengthPix, widthPix, outPath);
 
                 MessageBox.Show("完成");
             }
